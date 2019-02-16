@@ -5,6 +5,8 @@ certbot certonly \
   --agree-tos \
   --email $1 \
   --dns-cloudflare \
-  --dns-cloudflare-credentials /config/cloudflare.ini \
+  --dns-cloudflare-credentials /etc/letsencrypt/cloudflare.ini \
   --rsa-key-size 4096 \
   -d $2
+
+cp -Lr /etc/letsencrypt/live /certs

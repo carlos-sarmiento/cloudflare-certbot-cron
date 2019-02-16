@@ -1,3 +1,5 @@
 #! /bin/sh
 
-certbot renew 
+certbot renew
+
+cp -Lr /etc/letsencrypt/live /certs
