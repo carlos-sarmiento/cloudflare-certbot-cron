@@ -1,0 +1,10 @@
+#! /bin/sh
+
+certbot certonly \
+  -n \
+  --agree-tos \
+  --email $1 \
+  --dns-cloudflare \
+  --dns-cloudflare-credentials /config/cloudflare.ini \
+  --rsa-key-size 4096 \
+  -d $2
