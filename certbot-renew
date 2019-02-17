@@ -2,4 +2,4 @@
 
 certbot renew
 
-cp -Lr /etc/letsencrypt/live /certs
+cp -Lr /etc/letsencrypt/live/* /certs

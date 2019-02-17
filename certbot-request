@@ -9,4 +9,4 @@ certbot certonly \
   --rsa-key-size 4096 \
   -d $2
 
-cp -Lr /etc/letsencrypt/live /certs
+cp -Lr /etc/letsencrypt/live/* /certs
